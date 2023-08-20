@@ -17,6 +17,10 @@ val OpenSans = FontFamily(
     Font(R.font.open_sans_light, FontWeight.Light),
     Font(R.font.open_sans_regular, FontWeight.Normal)
 )
+val Inter = FontFamily(Font((R.font.inter)))
+val HindSiliguri = FontFamily(Font(R.font.hind_siliguri))
+val HindSiliguriSemiBold = FontFamily(Font(R.font.hind_siliguri_semi_bold))
+
 
 val Typography = Typography(
     h6 = TextStyle(

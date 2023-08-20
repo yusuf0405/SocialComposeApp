@@ -12,7 +12,7 @@ import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
-import com.joseph.socialcomposeapp.home_screen.NavGraphs
+import com.joseph.socialcomposeapp.auth.NavGraphs
 import com.ramcosta.composedestinations.DestinationsNavHost
 
 
@@ -34,12 +34,7 @@ fun SocialApp() {
     }
 
     Scaffold(
-        scaffoldState = scaffoldState,
-        topBar = {
-            AppBar(
-                navHostController = navHostController
-            )
-        }
+        scaffoldState = scaffoldState
     ) { innerPaddings ->
         DestinationsNavHost(
             modifier = Modifier.padding(innerPaddings),
